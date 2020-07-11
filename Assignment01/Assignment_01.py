@@ -22,4 +22,11 @@ print(mean_y)
 # total number of values
 n=len(X)
 
-# using the formula to calculate b1 and b2
+# using the formula to calculate b0 and b1
+numer=0
+denom=0
+for i in range(n):
+    numer+=(X[i]-mean_x)*(Y[i]-mean_y)
+    denom+=(X[i]-mean_x)**2
+b1=numer/denom
+b0=mean_y-(b1*mean_x)
