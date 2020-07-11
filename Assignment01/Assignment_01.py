@@ -85,4 +85,4 @@ print(r2)
 print("*" * 20)
 x_particuar = int(input('Enter a value of head size : '))
 cal = b0 + b1 * x_particuar
-print("calculated value", cal)
+print("calculated value of brain weight : ", cal)
