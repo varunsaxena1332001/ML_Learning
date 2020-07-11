@@ -31,3 +31,13 @@ for i in range(n):
     denom+=(X[i]-mean_x)**2
 b1=numer/denom
 b0=mean_y-(b1*mean_x)
+
+
+# printing coefficient
+print(b1)
+print(b0)
+
+max_x=np.max(X)+100
+min_x=np.min(X)+100
+
+# calculating line values x and y
