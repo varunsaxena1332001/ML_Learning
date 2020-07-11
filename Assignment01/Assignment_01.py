@@ -53,3 +53,22 @@ plt.xlabel('Head Size(cm^3)')
 plt.ylabel('Brain Weight(grams)')
 plt.legend()
 plt.show()
+
+# calculating Root Mean Squares Error
+rmse=0
+for i in range(n):
+    y_pred=b0+b1*X[i]
+    rmse+=(Y[i]-y_pred)**2
+rmse=np.sqrt(rmse/n)
+print("RMSE")
+print(rmse)
+# calculating R2 Score
+ss_tot=0
+ss_res=0
+for i in range(n):
+    y_pred=b0+b1*X[i]
+    ss_tot+=(Y[i]-mean_y)**2
+    ss_res+=(Y[i]-y_pred)**2
+r2=1-(ss_res/ss_tot)
+print("R2 Score")
+print(r2)
