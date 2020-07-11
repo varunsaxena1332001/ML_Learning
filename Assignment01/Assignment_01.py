@@ -41,3 +41,15 @@ max_x=np.max(X)+100
 min_x=np.min(X)+100
 
 # calculating line values x and y
+x=np.linspace(min_x,max_x,1000)
+y=b0+b1*x
+
+# ploting line
+plt.plot(x,y,color='#58b970',label='Regression Line')
+# ploting Scatter Points
+plt.scatter(X,Y,c='#ef5423',label='Scatter Plot')
+
+plt.xlabel('Head Size(cm^3)')
+plt.ylabel('Brain Weight(grams)')
+plt.legend()
+plt.show()
