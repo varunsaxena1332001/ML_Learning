@@ -83,6 +83,7 @@ print("R2 Score")
 print(r2)
 
 print("*" * 20)
-x_particuar = int(input('Enter a value of head size : '))
-cal = b0 + b1 * x_particuar
+x_particular = int(input('Enter a value of head size : '))
+cal = b0 + b1 * x_particular
+print("values of head size : ", x_particular)
 print("calculated value of brain weight : ", cal)
