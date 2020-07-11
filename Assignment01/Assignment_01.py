@@ -1,3 +1,14 @@
+"""
+Name = Varun Saxena
+Program= calculation of brain weigth on basis of the size of head
+Branch=Btech 3rd year
+course=cse
+Section =A
+Rollno.=60
+University RollNo.=181500783
+
+"""
+
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -70,3 +81,8 @@ for i in range(n):
 r2 = 1 - (ss_res / ss_tot)
 print("R2 Score")
 print(r2)
+
+print("*" * 20)
+x_particuar = int(input('Enter a value of head size : '))
+cal = b0 + b1 * x_particuar
+print("calculated value", cal)
