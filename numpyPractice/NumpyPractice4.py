@@ -1,3 +1,4 @@
+# to determine the "determinant" of matrix
 from numpy import linalg as LA
 import numpy as np
 
